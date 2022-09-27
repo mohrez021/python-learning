@@ -1,0 +1,7 @@
+# open terminal:
+* pylint for debuging 
+
+```
+pip install autopep8 
+pip install pylint
+```
