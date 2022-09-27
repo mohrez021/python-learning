@@ -5,3 +5,7 @@
 pip install autopep8 
 pip install pylint
 ```
+---
+
+for activating pep8:
+File > Preferences > Settings > format on save >  active checkbox
