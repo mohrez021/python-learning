@@ -1,0 +1,355 @@
+# ------------------------------------------------------------
+# ------------------**## Variables ##**-----------------------
+# ------------------------------------------------------------
+# *--*-*-*-*-*-* String
+my_story = "A Thousand Splendid Suns"
+print(my_story)
+
+# *-*-*-*-*-*-*-*- Number
+my_grade = 85
+print(my_grade)
+
+# *-*-*-*-*-*-*-* Boolean
+am_i_young = True
+print(am_i_young)
+
+
+#===============================================================
+# ------------------------------------------------------------
+# ----------------**## Variable Names ##**--------------------
+# ------------------------------------------------------------
+# 1- Variable names must make sense
+movie_rating = 8.5
+
+# 2- Python convention is to use lowercase letters
+my_name = "Muslim Helalee"
+
+# 3- Python is snake case (seprate words section with _)
+# myName # camel case
+user_info = "Online"
+
+# 4- Variable names must start with a letter or _
+# 15street # error
+
+# 5- Following the pep8 standards
+
+
+#===================================================================
+#+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#*******************************************************************
+# ------------------------------------------------------------
+# ---------------**## Data Types part 1 ##**------------------
+
+"""
+--Data Type--         --Class--                 --Value--
+None                   -> NoneType                -> None
+integers               -> int                     -> 45
+floating point numbers -> float                   -> 4.5
+booleans               -> bool                    -> True/False
+strings                -> str                     -> "Muslim Helalee"
+list                   -> list                    -> [1, 2, 3]
+dictionary             -> dict                    -> {"user_name": "awesome50", "user_id": 56}
+tuple                  -> tuple                   -> (10, 20, 30)
+set                    -> set                     -> {"cat", 99}
+"""
+
+# ------------------------------------------------------------
+# ---------------------**## None ##**-------------------------
+# The Absence of a value
+print(None)
+print(type(None))
+
+user_password = None
+print(user_password)
+
+# ------------------------------------------------------------
+# *-*-*-*-*--------------- Numbers **************************
+# Integer
+age = 38
+print(age)
+print(type(age))
+
+# Floats
+grade = 8.9
+print(grade)
+print(type(grade))
+
+# -------------**## Number Methods & Operations ##**----------
+# Arithmetic Operations
+# print(23 + 12)
+# print(50 - 10)
+# print(50 * 10)
+# print(50 / 10)
+# print(50 // 10)   # خارج قسمت 
+# print(50 % 10)    # باقیمانده
+# print(2 ** 5)     # توان
+
+# Augmented Assignment Operator
+# number = 10
+# number = number + 5
+# number += 5
+# number *= 2
+# number /= 5
+# print(number)
+
+# Number Methods
+# 1- round()
+# print(round(3.1245))
+# print(round(110.2356))
+
+# 2- abs()
+# print(abs(-1.45))
+# print(abs(+1.45))
+
+# https://docs.python.org/3/library/math.html
+import math
+
+print(math.sin(180))
+print(math.sin(0))
+print(math.cos(0))
+print(math.ceil(1.1))
+print(math.ceil(2.03))
+
+
+
+# ------------------------------------------------------------
+# *-*-*-*-*--------------- Booleans **************************
+alarm = True
+offline = False
+print(alarm, offline)
+print(type(alarm))
+print(type(offline))
+
+
+# ------------------------------------------------------------
+# *-*-*-*-*--------------- Strings **************************
+movie_name = "The good, bad and ugly"
+print(movie_name)
+print(type(movie_name))
+
+# -----------------**## String Methods ##**-------------------
+# 1- len()
+address = "Afghanistan"
+# print(len(address))
+
+# 2- [] Notation
+# print(address[0])
+# print(address[7])
+# print(address[-1])
+# print(address[-4])
+
+# 3- [] Notation
+# print(address[0:4])
+# print(address[-7:-1])
+# print(address[0:])
+# print(address[:9])
+# print(address[:])
+
+# 4- Concatenation ->>>> Formatted Strings
+country = "USA"
+city = "NYC"
+full_address = city + ", " + country  # concatenation
+full_address = f"{city}, {country}"   # format
+print(full_address)
+
+# 5- upper()
+# print(address.upper())
+
+# 6- lower()
+# print(city.lower())
+
+# 7- title()
+# print(full_address.title())
+
+# 8- strip()
+job = "       Programmer   "
+# print(job)
+# print(job.strip())
+# print(job.lstrip())
+# print(job.rstrip())
+
+# 9- find()
+# print(address.find("n"))
+# print(address.find("i"))
+
+# 10- replace()
+# print(address.replace("f", "Z"))
+
+# 11- in operator
+# print("ne" in address)
+# print("ni" in address)
+
+# 12- not in operator
+# print("ne" not in address)
+# print("ni" not in address)
+
+
+# ------------------------------------------------------------
+# *-*-*-*-*--------------- List ********************************
+# Ordered # mutable(it is changeable)
+mixed = [1, 2, 3.2, 5.4, True, "Muslim Helalee", [1, 2, 3]]
+# print(mixed)
+# print(type(mixed))
+
+
+# ------------------------------------------------------------
+# *-*-*-*-*--------------- Dictionary **************************
+# unordered # {key: value}
+user_info = {"user_name": "awesome50", "user_id": 56}
+print(user_info)
+print(type(user_info))
+
+
+# ------------------------------------------------------------
+# *-*-*-*-*--------------- Tuple *******************************
+# ordered # immutable(it is not changeable) > for writing protected data. it is usually faster than list
+mixed_tuple = (1, 2, 3.2, 5.4, True, "Muslim Helalee", [1, 2, 3])
+print(mixed_tuple)
+print(type(mixed_tuple))
+
+
+# ------------------------------------------------------------
+# *-*-*-*-*--------------- Set *********************************
+# unordered
+mixed_set = {1, 2, 3.2, 5.4, "Python", "Muslim Helalee", 101}
+print(mixed_set)
+print(type(mixed_set))
+
+
+
+#//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+# ------------------------------------------------------------
+# ------------------**## Escape Sequences ##**----------------
+# \'
+# \"
+# \\
+# \n
+
+# story_desc = "It's a touching story"
+# story_desc = "It\"s a touching story"
+# story_desc = 'It\'s a touching story'
+# story_desc = "It\\'s a touching story"
+# story_desc = "It's  \n a \n touching  \n story"
+# print(story_desc)
+
+
+#//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+# ------------------------------------------------------------
+# -----------------**## Type Conversion ##**------------------
+number = input("number: ")
+print(type(number))   #> str
+
+# int()
+# float()
+# str()
+# bool()
+
+y = int(number) + 202
+print(y)
+print(type(y))      #> int
+
+# Falsy Values:   ----------------> # 0     # ""      # None 
+print(bool(0))
+print(bool(""))
+print(bool(None))
+
+# other values are going to be truth
+print(bool(10))
+print(bool("Jack"))
+print(bool("False"))
+
+
+
+#//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+# ------------------------------------------------------------
+# ----------------**## Namespace Part ##**------------------
+#namespace is basically a collection of names
+A scope is a portion of the program from where a namespace can be accessed directly without any prefix. 
+Built-in Namespace > Module: Global Namespace > function: Local Namespace
+If the variables are local to a namespace, you can access them and you can modify them,
+If the variables are not local to a namespace, you can access them but you cannot modify them
+
+
+# *****************---------------- Example
+# id ---------> Return the identity of an object. the location in memory
+# name = object  >>>>> memory location is gonna save for object.      everything in python is object
+number = 1001
+print(id(number))
+print(id(1001))   
+# both of them are stored in the same exact spot in memory
+
+
+# *****************---------------- Example
+a = 2
+print("a:", id(a))
+
+a = a + 1
+print("a1:", id(a))
+print("Three:", id(3))
+
+b = 2
+print("b:", id(b))
+print("Two:", id(2))
+
+# *****************---------------- Example
+something = 12
+something = "Jack"
+something = ["a", 2, True]
+
+# *****************---------------- Example
+def hello():
+    print("Hello World")
+
+
+something = hello     # here we assign a name(something) to our function(hello) >>> so we can call something 
+something()
+
+
+# *************------------- Example
+def outer():
+    outer_number = 100
+    # print(id(outer_number))
+
+    global global_number      # very bad practice , never use global.
+    global_number = 101
+    print("Global number =", global_number)
+
+    def inner():
+        inner_number = 200
+        inner_number = "Jack"
+        # print("Inner number =", inner_number)
+
+        outer_number = 500
+        # print(id(outer_number))
+        # print("Outer number =", outer_number)
+
+    inner()
+
+
+global_number = 300
+print(global_number)
+
+
+outer()
+
+print(global_number)
+
+
+
+#//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+# ------------------------------------------------------------
+# ------------------**## Input & Output ##**------------------
+
+# Example ->>>> Output
+# print("Hello From Python")
+# print(101)
+# print(True)
+# print([1, 2, 3])
+# print({"name": "Muslim"})
+first_name = "Muslim"
+last_name = "Helalee"
+print("My first name is {} and my last name is {}, so my full name is {} {}".format(first_name, last_name, first_name, last_name))
+
+# Example ->>>> Input
+number = input("num1: ")
+print(int(number))
