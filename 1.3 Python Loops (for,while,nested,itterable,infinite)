@@ -1,0 +1,100 @@
+# ------------------------------------------------------------
+# ------------------**## For Loops Part 1 ##**----------------
+for var in range(start,end,step):
+  do sth
+
+# ****************----------------- Example 1
+for x in range(10): # 0,1,2...,9
+  print(x)
+
+
+# ****************----------------- Example 2
+for number in range(5):
+  print(f"The code has run for {number} time(s)")
+
+# ****************----------------- Example 3
+for a in range(5, 15):      #5,6,7,...,13,14
+  print(a)
+
+
+# ****************----------------- Example 4
+for a in range(0, 100, 15):   # 0,15,30,45,60,75,90
+    print(a)
+
+
+# ****************----------------- Example 5
+
+status = True
+for number in range(1, 4):
+    print(f"Attempt {number}")
+
+    if status:
+        print("Success")
+        break
+
+
+# ****************----------------- Example 6
+status = False
+
+for number in range(1, 4):
+    print(f"Attempt {number}")
+
+    if status:
+        print("Success")
+        break
+else:
+    print("Failed")
+
+
+====================================================================================
+# ------------------------------------------------------------
+# ------------------**## Nested Loops ##**--------------------
+# ****************----------------- Example 7
+for x in range(3):
+  for y in range(6):
+    print(f"Point({x}, {y})")
+    
+
+# ****************----------------- Example 8
+for x in range(1):
+    for y in range(2):
+        for z in range(3):
+            print(f"Point({x}, {y}, {z})")
+
+
+=====================================================================================
+# ------------------------------------------------------------
+# --------------------**## Iterables ##**---------------------
+
+# ****************----------------- Example 9     range object is itterable
+print(type(range(5)))     #<class 'range'> 
+
+# ****************----------------- Example 10    string object is itterable
+for char in "Muslim Helalee":       # itterate each character
+  print(char)                       # print each character in each itterate >>> at first step M , at second u, at third s, .....
+
+# ****************----------------- Example 11    list object is itterable
+for something in ["Coffee", "Play with the Cat", "Walk the dog"]:       # there are three items in the list, so the loop is gonna be execute three times and each time print one of the items in the list in order.
+    print(something)
+
+
+==================================================================================
+# ------------------------------------------------------------
+# ------------------**## While Loops ##**---------------------
+# ****************----------------- Example 12
+temperature = 40
+
+while temperature >= 20:
+    print(f"it is a good day to go out when the temperature is {temperature}")
+    # temperature = temperature - 5
+    temperature -= 5
+
+
+
+==================================================================================
+# ------------------------------------------------------------
+# ------------------**## Infinite Loops ##**------------------ >
+# ****************----------------- Example 13      # it's an infinite loop that is never gonna be end (be careful about your code when use loop) >>> for resolving this issue we should have an ending condition.
+number = 100
+while number > 1:
+    print(number)
