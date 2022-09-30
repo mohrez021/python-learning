@@ -1,0 +1,121 @@
+# ------------------------------------------------------------
+# ---------------**## Comparison Operators ##**---------------
+# ----------------** > < >= <= == != **-----------------------
+## ord: Return the Unicode code point for a one-character string.
+
+print(14 > 4)           #True
+print(14 >= 4)          #True
+print(14 < 4)           #False
+print(14 <= 4)          #False
+print(14 == 14)         #True
+print(14 == "14")       #False
+print(14 != "14")       #True
+print("cat" > "dog")    #False
+print("cat" == "CAT")   #False
+print(ord("c"))
+print(ord("C"))
+print(ord("d"))
+print(ord("o"))
+print(ord("a"))
+print(ord("g"))
+print(ord("t"))
+
+==============================================================================================
+# ------------------------------------------------------------
+# ---------------**## Conditional Statements ##**-------------
+
+"""
+if (boolean expression):
+  execute the statements
+
+"""
+
+# ****************------------- Example ->>> Check for a single condition
+temperature = 35
+if temperature > 30:
+    print("It is a good day for walking")
+
+print("It is not part of the if statement")
+
+# ****************------------- Example ->>> Check for 2 conditions
+if temperature > 25:
+    print("Awesome")
+else:
+    print("Cold")
+
+# ****************------------- Example ->>> Check for mul
+temperature = -10
+
+if temperature >= 35:
+    print("Hot")
+elif temperature > 25:
+    print("Awesome")
+elif temperature < 20:
+    print("Cold")
+else:
+    print("Undecided")
+
+
+======================================================================================================
+# ------------------------------------------------------------
+# -----------------**## Ternary Operator ##**-----------------
+
+score = 74
+# *-*-*-*-* First Version
+if score >= 75:
+  print("Passed")
+else:
+  print("Failed")
+
+
+# *-*-*-*-* Second Version
+if score >= 75:
+    result = "Passed"
+else:
+    result = "Failed"
+
+print(result)
+
+
+# *-*-*-*-* Third Version ->>> Ternary Operator - the best one
+result = "Passed" if score >= 75 else "Failed"
+print(result)
+
+
+=======================================================================================================
+# ------------------------------------------------------------
+# -----------------**## Logical Operators ##**----------------
+
+"""
+1- and > all conditions shoud be true
+2- or  > one of the conditions 
+3- not >  True --- > False,   False -----> True
+"""
+
+# Example 1 ->>> Processing Loans ->>>> and LO
+high_income = True
+good_credit = True
+
+if high_income and good_credit:
+    print("Eligible For Loan")
+else:
+    print("Not Eligible For Loan")
+
+
+# Example 2 ->>> Processing Loans ->>>> or LO
+high_income = False
+good_credit = False
+
+if high_income or good_credit:
+    print("Eligible For Loan")
+else:
+    print("Not Eligible For Loan")
+
+
+# Example 3 ->>> Processing Loans ->>>> not LO
+student = False
+
+if not student:
+    print("Eligible For Loan")
+else:
+    print("Not Eligible For Loan")
